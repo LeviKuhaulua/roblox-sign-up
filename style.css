@@ -1,0 +1,13 @@
+body {
+    min-height: 100vh;
+    background: url(img/games-bg.jpeg), hsl(0, 0%, 0%, 0.5);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#sign-up {
+    background-color: #121215;
+    color: #f7f7f8;
+}
