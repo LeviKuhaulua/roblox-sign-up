@@ -24,8 +24,8 @@
 
     <img src="img/1012185.png" alt="Roblox Logo" role="presentation" height="50px" class="mx-auto d-block">
     <main class="pt-5 d-flex justify-content-center align-items-center flex-column">
-        <form id="sign-up" class="text-white rounded px-5 py-3 d-flex flex-column gap-4">
-            <h1 class="text-uppercase fs-5 fw-bolder">sign up and start having fun!</h1>
+        <form id="sign-up" class="text-white rounded-3 px-5 py-3 form-row row-cols-1">
+            <h1 class="col text-uppercase fs-5 fw-bolder">sign up and start having fun!</h1>
             <fieldset>
                 <legend class="fw-semibold fs-6">Birthday</legend>
                 <label for="month" class="visually-hidden sr-only">Month</label>
@@ -48,14 +48,16 @@
                 </select>
             </fieldset>
 
-            <section id="username-section">
-                <label for="username" class="fw-semibold fs-6">Username</label>
-                <input type="text" name="username" id="username" placeholder="Don't enter your real name">
+            <section id="username-section" class="form-group">
+                <label for="username" class="fw-semibold fs-6 form-label">Username</label>
+                <input type="text" name="username" id="username" placeholder="Don't enter your real name"
+                    class="form-control bg-dark text-white-50 border-0">
             </section>
 
             <section id="password-section">
                 <label for="password" class="fw-semibold fs-6">Password</label>
-                <input type="password" name="password" id="password" placeholder="At least 8 characters">
+                <input type="password" name="password" id="password" placeholder="At least 8 characters"
+                    class="form-control bg-dark text-white-50 border-0">
             </section>
 
             <fieldset>
@@ -65,6 +67,14 @@
                 <input type="radio" name="gender" id="male" value="male">
                 <label for="male">male</label>
             </fieldset>
+
+            <section class="fw-light" style="max-width: 50ch; font-size: 0.825rem;">
+                By clicking Sign Up, you are agreeing to the <a href="#" class="link-underline">Terms of Use</a>
+                including the arbitration clause and you are acknowledging the
+                <a href="#" class="link-underline">Privacy Policy</a>
+            </section>
+
+            <input type="submit" value="Sign Up" class="rounded-2 fw-medium py-2">
         </form>
     </main>
 

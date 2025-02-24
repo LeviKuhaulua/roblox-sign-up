@@ -5,9 +5,20 @@ body {
     background-position: center;
     background-size: cover;
     background-blend-mode: darken;
+    font-size: 16px;
 }
 
 #sign-up {
     background-color: #121215;
     color: #f7f7f8;
+
+    & > *:not(:last-child) {
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+    }
+}
+
+input[name="username"]::placeholder, 
+input[name="password"]::placeholder {
+    color: grey;
 }
